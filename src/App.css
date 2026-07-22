@@ -1,0 +1,254 @@
+.app-container {
+  display: flex;
+  width: 100%;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  box-sizing: border-box;
+  color: #ddd;
+}
+
+.page-section,
+.home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.crew-img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+}
+
+.spaceship-img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+}
+
+.welcome-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Forms */
+.crewmate-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.crewmate-form-img {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+}
+
+.form-fields {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-field {
+  background: #2a2a2a;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 180px;
+  text-align: left;
+}
+
+.form-field label,
+.color-label {
+  font-weight: bold;
+  color: #fff;
+}
+
+.form-field input[type='text'],
+.form-field input[type='number'] {
+  background: #1b1b1b;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #fff;
+  padding: 8px;
+}
+
+.color-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: normal;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.submit-button,
+.edit-button,
+.delete-button {
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.submit-button:hover,
+.edit-button:hover {
+  background: #575757;
+}
+
+.delete-button {
+  background: #7a2b2b;
+  margin-top: 20px;
+}
+
+.delete-button:hover {
+  background: #9c3838;
+}
+
+/* Gallery */
+.empty-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.crewmate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.crewmate-card {
+  background: #2a2a2a;
+  border: 2px solid #666;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #ddd;
+}
+
+.crewmate-card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.15s;
+}
+
+.crewmate-card-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #444;
+  align-self: center;
+  margin-bottom: 8px;
+}
+
+.crewmate-card.color-red { border-color: #e03131; }
+.crewmate-card.color-green { border-color: #2f9e44; }
+.crewmate-card.color-blue { border-color: #1971c2; }
+.crewmate-card.color-purple { border-color: #9c36b5; }
+.crewmate-card.color-yellow { border-color: #f0c000; }
+.crewmate-card.color-orange { border-color: #e8590c; }
+.crewmate-card.color-pink { border-color: #e64980; }
+.crewmate-card.color-rainbow {
+  border-image: linear-gradient(90deg, red, orange, yellow, green, blue, violet) 1;
+}
+
+.edit-button {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+/* Detail */
+.crewmate-detail .detail-hint {
+  color: #f0c000;
+  margin: 16px 0;
+}
+
+.crewmate-detail-img {
+  width: 160px;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.current-info {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+/* Category */
+.category-field {
+  min-width: 180px;
+}
+
+/* Crew stats */
+.crew-stats {
+  background: #2a2a2a;
+  border-radius: 8px;
+  padding: 16px 24px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.crew-stats-colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.crew-stats-color-chip {
+  background: #1b1b1b;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 14px;
+}
+
+.crew-success {
+  font-weight: bold;
+}
+
+.crew-success-great { color: #2f9e44; }
+.crew-success-good { color: #f0c000; }
+.crew-success-poor { color: #e03131; }
+
+.crewmate-grid.crew-success-great {
+  box-shadow: 0 0 20px rgba(47, 158, 68, 0.35);
+  border-radius: 12px;
+}
+
+.crewmate-grid.crew-success-good {
+  box-shadow: 0 0 20px rgba(240, 192, 0, 0.3);
+  border-radius: 12px;
+}
+
+.crewmate-grid.crew-success-poor {
+  box-shadow: 0 0 20px rgba(224, 49, 49, 0.3);
+  border-radius: 12px;
+}
