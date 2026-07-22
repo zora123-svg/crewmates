@@ -4,7 +4,7 @@ Submitted by: **Barisua Ntor-ue**
 
 This web app: **lets users create, view, update, and delete their own crew of custom crewmates, each with a name, speed, and color, backed by a Supabase database**
 
-Time spent: **7** hours spent in total
+Time spent: **9** hours spent in total
 
 ## Required Features
 
